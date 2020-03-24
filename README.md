@@ -29,7 +29,7 @@ As you can see above to get access to the properties within the weather API, had
 
 INSTRUCTIONS:
 
-Advice the tester to have a look at the previous codes that has been tested and test new properties that can potentially be tested using the frameworks.
+Advice the tester to have a look at the previous codes that has been tested and create new tests that can potentially be tested using the frameworks using POSTMAN to check properties that can be covered.
 
 
 CONCLUSION:
