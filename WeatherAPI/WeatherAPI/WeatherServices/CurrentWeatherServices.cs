@@ -8,7 +8,7 @@ using WeatherAPI.WeatherServices.DataHandler;
 
 namespace WeatherAPI.WeatherServices
 {
-    public class WeatherServices
+    public class CurrentWeatherServices
     {
         public CallWeatherManager callWeatherManager = new CallWeatherManager();
 
@@ -21,7 +21,7 @@ namespace WeatherAPI.WeatherServices
 
 
 
-        public WeatherServices()
+        public CurrentWeatherServices()
         {
             currentWeather = callWeatherManager.GetCurrentWeather("Milton Keynes");
             weatherDTO.DeserilizationWeather(currentWeather);
