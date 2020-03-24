@@ -10,10 +10,11 @@ namespace WeatherAPI.WeatherServices.DataHandler
 {
     public class WeatherDTO
     {
-        //this class is the model data
+
         public Rootobject Weather { get; set; }
 
 
+        //Here below is a method that shows the object above follows passing through a response from API
         public void DeserilizationWeather(string WeatherResponse)
         {
             Weather = JsonConvert.DeserializeObject<Rootobject>(WeatherResponse);

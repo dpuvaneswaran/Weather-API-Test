@@ -23,6 +23,12 @@ namespace WeatherAPI.Tests
         }
 
         [Test]
+        public void ChecksID()
+        {
+            Assert.AreEqual(2642465, currentWeather.weatherDTO.Weather.id);
+        }
+
+        [Test]
 
         public void CheckingTimeZones()
         {
@@ -35,6 +41,41 @@ namespace WeatherAPI.Tests
         {
             Assert.AreEqual("Milton Keynes", currentWeather.weatherDTO.Weather.name);
         }
+
+       
+        [Test]
+        public void ChecksCoordinationsLatitude()
+        {
+            Assert.AreEqual(52.04f, currentWeather.weatherDTO.Weather.coord.lat);
+        }
+
+        [Test]
+
+        public void ChecksCoordinationsLongituted()
+        {
+            Assert.AreEqual(-0.76f, currentWeather.weatherDTO.Weather.coord.lon);
+        }
+
+        [Test]
+
+        public void ChecksCountryLocation()
+        {
+            Assert.AreEqual("GB", currentWeather.weatherDTO.Weather.sys.country);
+        }
+
+        [Test]
+        public void CheckingHumidityOfCity()
+        {
+            Assert.That(currentWeather.weatherDTO.Weather.main.humidity.ToString, Is.Not.Empty);
+        }
+
+
+        // [Test]
+
+        // public void CheckWeatherDescription()
+        // {
+        //     Assert.AreEqual("clear sky", currentWeather.weatherDTO.Weather.weather);
+        // }
 
 
 
